@@ -1,0 +1,30 @@
+.history {
+    min-height: 604px;
+    padding: 26px 0 45px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        margin-top: 60px;
+        font-weight: 700;
+        font-size: 48px;
+        color: $main-color;
+    }
+    &__divider {
+        margin-top: 20px;
+        width: 500px;
+        height: 13px;
+        background-color: #F2AE4D;
+    }
+    &__text {
+        margin-top: 25px;
+        width: 650px;
+        font-size: 24px;
+        line-height: 28px;
+
+    }
+    &__img { 
+        display: flex;
+    }
+}

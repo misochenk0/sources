@@ -1,0 +1,43 @@
+.advantage {
+    min-height: 400px;
+    padding: 28px 0 145px;
+    background-color: #EEEEEE;
+    .container {
+        padding: 0 42px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        color: $main-color;
+    }
+    &__wrapper {
+        margin-top: 82px;
+        display: flex;
+        justify-content: center;
+    }
+    &-item {
+        margin-right: 100px;
+        &:last-of-type{
+            margin-right: 0;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+        }
+        &__title {
+            margin-top: 54px;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 0.36px;
+            color: $main-color;
+        }
+        &__descr {
+            margin-top: 12px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            color: #A1A1A1;
+        }
+    }
+}

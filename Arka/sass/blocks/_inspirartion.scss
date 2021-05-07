@@ -1,0 +1,94 @@
+.inspiration {
+    background-color: #eeeeee;
+    padding: 100px 0 50px;
+    &__slider {
+        display: none;
+        margin: 0 auto;
+        text-align: center;
+        img {
+            margin: 0 auto;
+            max-width: 80%;
+            min-width: 60%;
+            vertical-align: center;
+        }
+    }
+    .button {
+        display: block;
+        margin: 0 auto;
+    }
+    &__img {
+        position: absolute;
+    }
+    .container {
+        min-height: 982px;
+        position: relative;
+        .green {
+            width: 320px;
+            transition: .8s all;
+            &:hover {
+                z-index: 2;
+                cursor: zoom-in;
+                width: 360px;
+            }
+        }
+        .purple {
+            width: 615px;
+            right: 0;
+            transition: .8s all;
+            &:hover {
+                z-index: 2;
+                cursor: zoom-in;
+                width: 680px;
+            }
+        }
+        .blue {
+            top: 361px;
+            left: 335px;
+            width: 241px;
+            transition: .8s;
+            &:hover {
+                z-index: 2;
+                cursor: zoom-in;
+                width: 300px;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+        .grey {
+            right: 0;
+            top: 361px;
+            width: 358px;
+            transition: .8s all;
+            &:hover {
+                z-index: 2;
+                cursor: zoom-in;
+                width: 400px;
+            }
+        }
+        .pink {
+            bottom: 0;
+            width: 575px;
+            transition: .8s all;
+            &:hover {
+                z-index: 2;
+                cursor: zoom-in;
+                width: 620px;
+            }
+        }
+        .white {
+            bottom: 0;
+            right: 0;
+            width: 358px;
+            transition: .8s all;
+            &:hover {
+                z-index: 2;
+                cursor: zoom-in;
+                width: 400px;
+            }
+        }
+    }
+    .button {
+        margin-top: 45px;
+    }
+}

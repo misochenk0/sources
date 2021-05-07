@@ -1,0 +1,19 @@
+.start {
+    min-height: 150px;
+    background-color: #EEEEEE;
+    padding: 50px 0 100px;
+    &__title {
+        text-align: center;
+        margin-bottom: 55px;
+        margin: 0 0 55px;
+    }
+    &__wrapper {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        button {
+            margin: 0 5px;
+        }
+    }
+}

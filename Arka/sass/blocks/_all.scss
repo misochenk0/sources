@@ -1,0 +1,31 @@
+.all {
+    padding: 100px 0;
+    background-color: #EEEEEE;
+    &__title {
+        text-align: center;
+        color: $main-color;
+        font-weight: 700;
+        font-size: 48px;
+    }
+    &__divider {
+        display: block;
+        margin: 36px auto;
+        width: 543px;
+        height: 13px;
+        background-color: #F2AE4D;
+    }
+    &-item {
+        position: relative;
+        height: 395px;
+        line-height: 10px;
+        .button {
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 180px;
+            padding: 0;
+            font-size: 12px;
+        }
+    }
+}

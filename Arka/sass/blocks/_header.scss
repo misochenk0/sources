@@ -1,0 +1,201 @@
+.header {
+    min-height: 700px;
+    background-color: #F2AE4D;
+    position: relative;
+    width: 100%;
+    .container {
+        padding: 0 15px;
+    }
+    &__fixed {
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        top: 0px;
+        box-shadow: 1px 2px 4px $main-color;
+    }
+    &__nav {
+        width: 100%;
+        position: relative;
+        height: 61px;
+        display: flex;
+        .arko_logo {
+            position: absolute;
+            margin: 19px 0 0 24px;
+        }
+    }
+    &__wrapper {
+        display: block;
+        margin: 0 auto;
+    }
+    &__menu {
+        width: 800px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__item {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 61px;
+        text-transform: uppercase;
+        letter-spacing: 1.96px;
+        transition: 0.5s all;
+        padding: 0 25px;
+        a {
+            color: $main-color; 
+            position: relative;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+                &:before {
+                    content: url("../icons/Menu-logo_active.svg");
+                    position: absolute;
+                    left: -25px;
+                }
+            }
+        }
+    }
+    &__account {
+        position: absolute;
+        display: flex;
+        right: 24px;
+        height: 61px;
+        a {
+            margin: 0 5px 0;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 61px;
+            letter-spacing: 1.96px;
+            text-transform: uppercase;
+            color: $main-color;
+            margin-right: 15px;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        color: $main-color;
+        padding-top: 215px;
+        width: 60%;
+    }
+    &__descr {
+        margin: 33px 0 30px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: $main-color;
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        top: 108px;
+    }
+    &-mobile {
+        display: none;
+        bottom: 0;
+        height: 100vh;
+        z-index: 3;
+        width: 65%;
+        background-color: rgba($color: $main-color, $alpha: .8);
+        padding: 30px 0 0 35px;
+        position: fixed;
+        top: 0;
+        left: -520px;
+        text-align: left;
+        transition: .4s all;
+        &__menu {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            font-size: 31px;
+        }
+        &__item {
+            margin-bottom: 15px;
+            z-index: 7;
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: 700;   
+                z-index: 5;
+                transition: 0.4s all;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        &__account {
+            display: flex;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        &__text {
+            font-size: 34px;
+            font-weight: 700;
+        }
+        &__basket {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 100%;
+            margin-left: 30px;
+            img {
+                margin-top: 0;
+                height: 30px;
+                position: absolute;
+                right: 18%;
+                top: 50%;
+                transform: translateY(-50%);
+                &:hover {
+                    height: 30px;
+                }
+            }
+        }
+        &_active {
+            left: 0;
+            top: 0;
+        }
+    }
+}
+.hamburger {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    transition: .4s all;
+    &__line {
+        height: 2px;
+        width: 35px;
+        background-color: $main-color;
+        margin-bottom: 6px;
+        transition: .4s all;
+    }
+    &_active {
+        position: fixed;
+        .hamburger__line {
+            &:nth-child(1) {
+                margin-top: 7px;
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                position: absolute;
+                top: 7px;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

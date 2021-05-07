@@ -1,0 +1,18 @@
+.header-about {
+    min-height: 627px;
+    background: url('../img/about_bg.jpg') center center/cover no-repeat;
+    &__fixed {
+        background-color: transparent;
+    }
+    &_scroll {
+        background-color: #fff;
+        transition: .5s all;
+    }
+    &__title {
+        color: $main-color;
+        text-align: center;
+        font-weight: 700;
+        font-size: 72px;
+        padding-top: 150px;
+    }
+}

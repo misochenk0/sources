@@ -1,0 +1,22 @@
+.we {
+    min-height: 403px;
+    background-color: #eeeeee;
+    padding: 58px 0;
+    &__wrapper {
+        padding: 0 65px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__descr {
+        margin-top: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+    &__name {
+        margin-top: 5px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        color: $main-color;
+    }
+}

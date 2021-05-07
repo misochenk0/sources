@@ -1,0 +1,14 @@
+.features {
+    min-height: 100px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    &__img {
+        cursor: pointer;
+        &:hover {
+            filter: opacity(25%);
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.footer {
+    background-color: #F2F3F4;
+    min-height: 200px;
+    padding: 60px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        height: 24px;
+    }
+    &__menu {
+        padding: 0;
+        margin: 0 0 0 40px;
+        list-style-type: none;
+    }
+    &__link {
+        margin-bottom: 15px;
+        a {
+            font-weight: 400;
+            font-size: 15px;
+            color: #3D5675;
+            text-decoration: none;
+            transition: 0.7s all;
+            &:hover {
+                text-decoration: underline;
+                color: black;
+            }
+        }
+    }
+    &__block {
+        margin-left: 40px;
+        .footer__menu {
+            margin-left: 0;
+        }
+    }
+    &__icon {
+        margin-right: 11px;
+    }
+    &__form {
+        width: 220px;
+        margin-left: 25px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 15px;
+        color: #3D5675;
+    }
+    &__input {
+        margin: 13px 0;
+        background-color: #FFFFFF;
+        height: 24px;
+        width: 180px;
+        padding: 5px 14px;
+        border-radius: 34px;
+        border: none;
+        font-weight: 400;
+        font-size: 15px;
+        color: rgba(61, 86, 117, .4);
+    }
+    .button {
+        min-width: 150px;
+        height: 38px;
+        font-weight: 700;
+        font-size: 13px;
+    }
+}
