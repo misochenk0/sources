@@ -1,0 +1,111 @@
+.skills {
+    &__wrapper {
+        display: grid;
+        padding: 60px 11px 120px;
+        grid-template-columns: repeat(4, 270px);
+        gap: 13px;
+        grid-template-rows: repeat(2, minmax(270px, auto));
+    }
+    &-item {
+        border: 1px solid #000;
+        padding: 30px 30px 25px;
+        transition: all 1s;
+        position: relative;
+        &__descr {
+            visibility: hidden;
+            opacity: 0;
+            font-size: 12px;
+            display: none;
+            position: absolute;
+            width: 78%;
+        }
+        &__title {
+            text-align: center; 
+            font-size: 18px;
+        }
+        &__icon {
+            display: block;
+            margin: 0 auto 60px;
+            transition: all 1s;
+            height: 60%;
+        }
+        &__jquery, &__mongodb {
+            height: 22%;
+            margin-top: 40px;
+            margin-bottom: 90px;
+        }
+        &:hover {
+            .skills-item {
+                transition: all 1s;
+                &:nth-of-type(4) {
+                    padding-top: 45px;
+                }
+                &:nth-of-type(7) {
+                    padding-top: 38px;
+                }
+                &__icon {
+                    margin: 0;
+                    margin-bottom: 20px;
+                    transition: all 1s;
+                    height: 35%;
+                }
+                &__jquery, &__mongodb {
+                    margin: 20px 0 33px;
+                    height: 20%;
+                    transition: all 1s;
+                }
+                &__title {
+                    font-size: 14px;
+                    display: block;
+                    margin-top: 0;
+                    transition: all 1s;
+                    text-align-last: left;
+                }
+                &__descr {
+                    display: block;
+                    transition: all 1s;
+                    visibility: visible;
+                    font-size: 12px;
+                    line-height: 18px;
+                    opacity: 1;
+                    margin-top: 15px;
+                }
+            }
+        }  
+    }
+    &__percents {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        column-gap: 45px;
+        grid-template-rows: repeat(2, 70px);
+        row-gap: 30px;
+        margin-bottom: 120px;
+    }
+    &-block {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 300px 50px;
+        }
+        &__percent {
+            text-align: right;
+        }
+        &__row {
+            width: 350px;
+            height: 14px;
+            background-color: #E8E4DE;
+            border-radius: 4px;
+            margin-top: 27px;
+        }
+        &__title {
+            position: relative;
+            padding: 2px 0 0 13px;
+            @include before_circle;
+        }
+        &__amount {
+            height: 14px;
+            background-color: $main-color;
+            border-radius: 4px;
+            width: 0;
+        }
+    }
+}

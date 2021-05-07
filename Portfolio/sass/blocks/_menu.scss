@@ -1,0 +1,110 @@
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    width: 36px;
+    height: 21px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    span {
+        display: block;
+        width:30px;
+        height: 3px;
+        background-color: #151812;
+    }
+    span.long {
+        width: 36px;
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: .6s all;
+    &.active {
+        visibility: visible;
+        left: 0;
+        opacity: 1;
+    }
+    &__block {
+        position: relative;
+        width: 345px;
+        background-color: $main-color;
+        height: 100%;
+        transition: all .6s;
+        padding: 140px 0 0 75px;
+        z-index: 10;
+    }
+    &__close {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        cursor: pointer;
+    }
+    &__list {
+        list-style-type: none;
+
+    }
+    &__link {
+        position: relative;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+        a {
+            color: #ffffff;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            left: -35px;
+            top: 9px;
+            height: 15px;
+            border-radius:100%;
+            border: 1px solid #000;
+            transition: all .6s;
+        }
+        &:hover {
+            &:before {
+                background-color: #fff;
+            }
+        }
+    }
+    &__social {
+        position: absolute;
+        display: flex;
+        width: 90px;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        &_hover {
+            &:hover {
+                svg path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.75;
+    }
+}
