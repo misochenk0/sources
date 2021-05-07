@@ -1,0 +1,390 @@
+@mixin orange_btn_hover()
+    transition: 0.4s
+    &:hover
+        background-color: #Fff
+        color: black
+        text-decoration: underline
+        border: 1px solid black        
+@mixin white_btn_hover()
+    transition: 0.4s
+    &:hover
+        background-color: #FF6336
+        color: white
+        border: none
+        text-decoration: underline 
+    
+.text
+    font-size: 100px
+    color: black
+    font-weight: 600
+header nav
+    width: 100%
+    height: 95px
+    position: fixed
+    background-color: #fff
+    z-index: 1
+.menu_active
+    display: none
+.hamburger
+    display: none
+.menu
+    display: flex
+    justify-content: space-between
+    padding: 38px 0 20px 0
+    &_item
+        list-style-type: none
+        font-weight: 400
+        font-size: 15px
+    &_link
+        text-decoration: none
+        color: black
+        &:hover
+            color: #FF6336
+header
+    min-height: 100vh
+.header
+    &_logo
+        padding: 34px 51px 0 0
+    &_buttons
+        display: flex
+        justify-content: space-between  
+        padding-top: 22px
+    &_divider
+        background-color: grey
+        width: 100%
+        height: 1px
+    &_button_login
+        height: 45px
+        width: 120px
+        background-color: #fff
+        font-weight: 600
+        @include white_btn_hover
+    &_button_free
+        height: 45px
+        width: 120px
+        background: #FF6336
+        color: white
+        font-weight: 600
+        border: none
+        transition: 0.4s
+        @include orange_btn_hover
+    &_wrapper
+        padding-top: 185px
+    &_title
+        font-weight: 600
+        font-size: 50px
+        color: black
+        line-height: 55px
+    &_text
+        margin-top: 51px
+        font-size: 20px
+        line-height: 25px
+        color: black
+    &_btn
+        margin-top: 50px
+        &_1
+            width: 160px
+            height: 60px
+            background-color: #FF6336
+            border: none
+            font-weight: 600
+            color: white
+            font-size: 16px
+
+            @include orange_btn_hover 
+        &_2
+            width: 160px
+            height: 60px
+            background-color: #ffffff
+            margin-left: 10px
+            font-weight: 600
+            color: black
+            font-size: 16px
+            @include white_btn_hover
+    &_descr
+        margin-top: 25px
+        font-size: 13px
+        color: black
+    &_img
+        width: 100%
+
+
+.companies
+    background-color: #FF9C7D
+    min-height: 455px
+    padding: 98px 0 94px 0
+    &_title
+        font-weight: 600
+        font-size: 50px
+        line-height: 60px
+        text-align: center
+    &_logo
+        display: flex
+        justify-content: space-between
+        padding: 0 20px
+        margin-top: 70px
+        &_md_hidden
+            display: none
+.control
+    min-height: 745px
+    padding: 100px 0
+    &_header
+        font-weight: 600
+        font-size: 40px
+        line-height: 60px
+        color: black
+        margin-top: 100px
+    &_text
+        font-size: 17px
+        line-height: 30px
+        color: black
+        margin-top: 30px
+    &_subtext 
+        font-weight: 600
+        font-size: 20px
+        color: black
+        margin-top: 30px
+        a
+            text-decoration: none
+            color: black
+            transition: 0.3s
+            &:hover
+                color: #FF9C7D
+                text-decoration: none
+    &_img
+        width: 100%
+.questions
+    min-height: 1033px
+    background-color: #FFF8E4
+    padding: 120px 0 93px 0
+    &_title
+        font-weight: 600
+        font-size: 50px
+        text-align: center
+    &_item
+        margin-top: 57px
+        padding: 0 10px
+        text-align: center
+        &_title
+            font-weight: 600
+            font-size: 25px
+            color: black
+            margin-top: 21px
+        &_text
+            font-size: 20px
+            line-height: 28px
+            color: black
+            margin-top: 25px
+            padding: 0
+.boost
+    min-height: 851px
+    padding: 154px 0 137px
+    &_title
+        font-weight: 600
+        font-size: 43px
+        text-align: center
+    &_item
+        text-align: center
+        margin-top: 84px
+        &_img
+            height: 183px
+        &_title
+            font-weight: 600
+            margin-top: 50px
+            font-size: 30px
+        &_text
+            margin-top: 50px
+            font-size: 20px
+        &_subtext
+            margin-top: 26px
+            text-decoration: underline
+            color: black
+            transition: 0.3s
+            &:hover
+                color: #FF9C7D
+.quotate
+    min-height: 468px
+    padding: 43px 0 105px
+    background-color: #C9E8F2
+    &_text
+        margin-top: 20px
+        font-size: 30px
+        line-height: 40px
+    &_name
+        font-size: 15px
+        margin-top: 23px
+    &_img
+        margin-top: 7px
+    &_photo
+        width: 100%
+.ratings
+    min-height: 332px
+    background-color: #DABC98
+    &_img
+        margin-top: 90px
+    &_text
+        margin: 116px 0 0 37px 
+        font-weight: 600
+        font-size: 27px
+        line-height: 50px
+        color: black
+    &_block
+        border-left: 1px solid black
+        padding-left: 71px 
+        margin-top: 80px
+        height: 168px
+        &_g2
+            margin-top: 30px
+            transition: .3s all
+            &:hover
+                filter: drop-shadow(5px 2px 1px grey)
+    &_capterra
+        margin-top: 110px
+        transition: .3s all
+        &:hover
+            filter: drop-shadow(5px 2px 1px grey)
+.integrate
+    min-height: 1099px
+    padding: 169px 0 162px 0
+    &_title
+        font-weight: 600
+        font-size: 65px
+        line-height: 75px
+        text-align: center
+    &_text
+        font-size: 25px
+        text-align: center
+        line-height: 30px
+    &_img
+        margin-top: 25px
+        width: 100%
+    &_btn
+        height: 60px
+        width: 193px
+        display: block
+        margin: 0 auto
+        margin-top: 32px
+        background-color: #FF6336
+        border: none 
+        font-size: 16px
+        font-weight: 600
+        color: white
+        @include orange_btn_hover
+.free
+    min-height: 500px
+    background-color: #FF9C7D
+    padding: 109px 0 109px
+    &_title
+        font-weight: 600
+        font-size: 65px
+        line-height: 75px
+        text-align: center
+    &_text
+        text-align: center
+        font-size: 20px
+        margin-top: 29px
+    &_btn
+        display: block
+        margin: 0 auto
+        height: 60px
+        width: 160px
+        background-color: black
+        margin-top: 54px
+        border: none
+        color: white
+        font-weight: 600
+        @include orange_btn_hover
+footer
+    min-height: 750px
+    background-color: #EEEEEE
+    padding: 92px 0 48px
+    .specialized_logo
+        height: 30px
+.footer
+    &_title
+        font-weight: 600
+        font-size: 30px
+    &_img
+        margin: 28px 0 31px
+        width: 200px
+    &_text
+        font-size: 16px
+        line-height: 25px
+        margin: 11px 0 15px
+    &_subtext
+        color: black
+        font-weight: 600
+        font-size: 16px
+        transition: 0.3s
+        &:hover
+            color: #FF9C7D
+    &_list_title
+        font-size: 20px
+    &_menu
+        font-size: 15px
+        padding-left: 0
+        &_item
+            list-style-type: none 
+            a
+                color: black
+                transition: 0.3s all
+                &:hover
+                    color: #FF9C7D
+    &_low_wrapper
+        margin-top: 95px
+        border-top: 1px solid black
+        padding-top: 48px    
+    &_info
+        font-size: 12px
+        line-height: 15px
+    &_copy
+        font-size: 12px
+    &_localise_logo
+        width: 100%    
+body 
+    position: relative
+.overflow
+    position: fixed
+    top: 0
+    opacity: 0%
+    width: 100%
+    z-index: 1000
+    height: 100vh
+    visibility: hidden
+
+.overflow_active 
+    overflow: hidden
+    transition: .5s all
+    visibility: visible
+    opacity: 100%
+.layer 
+    opacity: 40%
+    background-color: grey
+    width: 100%
+    height: 100%
+.modal
+    visibility: hidden
+    opacity: 0%
+    z-index: 1001
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    position: absolute
+    width: 300px
+    height: 120px
+    background-color: #fff
+    text-align: center
+    padding-top: 30px
+    box-shadow: 2px 3px 8px black
+    transition: .5s all
+    .btn_close
+        margin-top: 10px
+        background-color: #FF6336
+        border: none
+        font-weight: 600
+        color: white
+        font-size: 16px
+        @include white_btn_hover
+.visible 
+    opacity: 100%
+    visibility: visible
