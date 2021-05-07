@@ -1,0 +1,142 @@
+.world .container {
+    position: relative;
+
+}
+.world__circle {
+    width: 10px;
+    position: absolute;
+    transition: .5s all;
+    height: 10px;
+    &_blur {
+        width: 100%;
+        height: 100%;
+        filter: blur(5px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 100%;
+        background-color: rgba(84, 155, 184, 0.9);
+    }
+    &_dot {
+        color: rgba(255, 255, 255, 0.55);
+        width: 2px;
+        background-color: rgb(51, 51, 161);
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        filter: none;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    &_1, &_2, &_3, &_4, &_5, &_6, &_7, &_8, &_9, &_10, &_11, &_12, &_13, &_14, &_15, &_16, &_17, &_18, &_19, &_20 {
+        opacity: 0;
+    }
+    &_1 {
+        top: 287px;
+        left: 194px;
+    }
+    &_2 {
+        top: 250px;
+        left: 218px;
+        animation-delay: 1s;
+    }
+    &_3 {
+        top: 230px;
+        left: 240px;
+        animation-delay: 2s;
+    }
+    &_4 {
+        top: 267px;
+        left: 50px;
+        animation-delay: 2s;
+    }
+    &_5 {
+        top: 195px;
+        animation-delay: 2s;
+    }
+    &_6 {
+        top: 170px;
+        left: 500px;
+        animation-delay: 3s;
+    }
+    &_7 {
+        top: 200px;
+        left: 530px;
+        animation-delay: 3s;
+    }
+    &_8 {
+        top: 180px;
+        left: 580px;
+        animation-delay: 3s;
+    }
+    &_9 {
+        top: 530px;
+        right: 30px;
+        animation-delay: 3s;
+    }
+    &_10 {
+        top: 490px;
+        left: 330px;
+        animation-delay: 4s;
+    }
+    &_11 {
+        top: 210px;
+        left: 210px;
+        animation-delay: 4s;
+    }
+    &_12 {
+        top: 210px;
+        left: 580px;
+        animation-delay: 4s;
+    }
+    &_13 {
+        top: 280px;
+        right: 310px;
+        animation-delay: 4s;
+    }
+    &_14 {
+        top: 265px;
+        right: 70px;
+        animation-delay: 5s;
+    }
+    &_15 {
+        top: 400px;
+        left: 650px;
+        animation-delay: 5s;
+    }
+    &_16 {
+        top: 200px;
+        right: 500px;
+        animation-delay: 5s;
+    }
+    &_17 {
+        top: 550px;
+        right: 550px;
+        animation-delay: 6s;
+    }
+    &_18 {
+        top: 240px;
+        left: 500px;
+        animation-delay: 6s;
+    }
+    &_19 {
+        top: 160px;
+        right: 430px;
+        animation-delay: 6s;
+    }
+    &_20 {
+        top: 180px;
+        right: 470px;
+        animation-delay: 6s;
+    }
+}
+
+.animated {
+    animation-name: map;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    @keyframes map {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+}
