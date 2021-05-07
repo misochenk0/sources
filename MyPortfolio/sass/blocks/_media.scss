@@ -1,0 +1,572 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .header {
+        &__title {
+            font-size: 50px;
+            line-height: 55px;
+            span {
+                font-size: 60px;
+            }
+        }
+        &__subtitle {
+            font-size: 25px;
+        }
+    }
+    .button {
+        width: 200px;
+        height: 54px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .about {
+        min-height: 600px;
+        &__photo {
+            width: 300px;
+            margin-left: 50px;
+        }
+        &__block {
+            top: 90px;
+            height: 390px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+    }
+    .contacts {
+        &__photo {
+            margin-left: 35%;
+        }
+        &__social {
+            margin-left: 39.9%;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        &__link {
+            font-size: 16px;
+            &:before {
+                top: 20px;
+            }
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 42px;
+            span {
+                font-size: 45px;
+            }
+        }
+        &__subtitle {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        &__menu {
+            padding-top: 0;
+            line-height: 40px;
+            height: 40px;
+        }
+        .active {
+            border-top: 1px solid $main-color;
+        }
+    }
+    .button {
+        width: 160px;
+        height: 38px;
+        font-size: 13px;
+    }
+    .title {
+        font-size: 27px;
+        &_fz25 {
+            font-size: 23px;
+        }
+    }
+    .about {
+        &__photo {
+            width: 250px;
+        }
+        &__block {
+            width: 500px;
+            height: 360px;
+            right: 20px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+            font-size: 13px;
+        }
+    }
+    .skills {
+        min-height: 600px;
+        &__wrapper {
+            padding: 20px 0;
+        }
+        &-item {
+            width: 230px;
+            height: 280px;
+            grid-template-columns: 70px 120px;
+            grid-template-rows: 175px 20px 30px;
+            &__img {
+                width: 80%;
+                padding-top: 30px;
+            }
+            &__percent {
+                font-size: 15px;
+                line-height: 15px;
+            }
+            &__text {
+                font-size: 15px;
+                span {
+                    font-size: 18px;
+                    line-height: 40px;
+                }
+            }
+            &__scale {
+                width: 100%;
+            }
+        }
+        &-extra {
+            &__title {
+                font-size: 15px;
+                line-height: 18px;
+                padding-top: 17px;
+            }
+            &__photo {
+                height: 50px;
+            }
+        }
+    }
+    .portfolio {
+        padding: 40px 0;
+        &__bg {
+            background: url(../img/iPad.png) center center/cover no-repeat;
+            width: 690px;
+            height: 500px;
+            top: 87px;
+            z-index: 1;
+        }
+        .container {
+            padding-top: 28px;
+        }
+        &__wrapper {
+            width: 590px;
+            height: 444px;
+        }
+        &__carousel {
+            z-index: 2;
+            margin: 0 auto;
+            height: 100%;
+        }
+        &_block {
+            height: 100%;
+        }
+        &__photo {
+            width: 100%;
+            height: 100%;
+        }
+        .slick-next {
+            width: 100px;
+            border-radius: 10px;
+            @keyframes right_btn {
+                0% {}
+                100%{top: 105%;}
+            }
+        }
+        .slick-prev {
+            width: 100px;
+            border-radius: 10px;
+            @keyframes left_btn {
+                0% {}
+                100%{top: 105%;}
+            }
+        }
+    }
+    .contacts {
+        min-height: 500px;
+        padding: 40px 0;
+        &__info {
+            font-size: 15px;
+            width: 600px;
+        }
+        &__photo {
+            height: 300px;
+            margin-left: 27%;
+        }
+        &__grid {
+            grid-template: 300px 50px / repeat(2, 1fr);
+        }
+        &__text {
+            font-size: 15px;
+            padding-bottom: 4px;
+        }
+        &__social {
+            margin: 20px 0 0 130px;
+            width: 170px;
+            img {
+                width: 30px;
+            }
+        }
+        .input {
+            padding: 5px 7px;
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+        &__textarea {
+            height: 104px;
+            width: 320px;
+        }
+        &__rules {
+            padding: 0 0 10px;
+            font-size: 10px;
+        }
+    }
+    .modal {
+        height: 300px;
+        width: 280px;
+        padding: 15px;
+        &__text {
+            font-size: 15px;
+            line-height: 18px;
+            margin: 5px 0;
+        }
+        &__input {
+            height: 35px;
+            font-size: 12px;
+        }
+        &__rules {
+            font-size: 9px;
+        }
+        &__textarea {
+            padding: 7px;
+            height: 50px;
+            font-size: 10px;
+        }
+        .button {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .header {
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .title {
+        font-size: 20px;
+        &_fz25 {
+            font-size: 17px;
+            margin-bottom: 0;
+        }
+    }
+    .about {
+        min-height: 440px;
+        &__photo {
+            width: 150px;
+            margin: 0;
+        }
+        &__block {
+            padding: 20px 10px 20px 50px;
+            top: 50px;
+            width: 400px;
+            height: 280px;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &__item {
+            font-size: 12px;
+        }
+        &__grid {
+            grid-template-rows: repeat(3,25px );
+        }
+    }
+    .skills {
+        min-height: 500px;
+        padding: 40px 0;
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 0;
+        }
+        &-item {
+            margin: 10px;
+            height: 210px;
+            grid-template-rows: 120px 20px 30px;
+            &__text {
+                font-size: 12px;
+                line-height: 16px;
+                span {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+            }
+            &__img {
+                padding-top: 20px;
+            }
+            &__scale {
+                height: 23px;
+            }
+        }
+        &-extra {
+            margin-top: 20px;
+            &__title, .photoshop {
+                font-size: 10px;
+                line-height: 15px;
+                padding-top: 12px;
+            }
+            &__photo {
+                height: 40px;
+            }
+        }
+    }
+    .portfolio {
+        min-height: 550px;
+        .slick-next {
+            right: 140px; 
+            z-index: 1;
+        }
+        .slick-prev {
+            left: 140px; 
+            z-index: 1;
+        }
+        .container {
+            padding-top: 0;
+        }
+        &__wrapper {
+            margin-top: 25px;
+            height: 333px;
+            width: 440px;
+        }
+        &__bg {
+            background: url(../img/iPad.png) center center/94% no-repeat;
+            top: 11px;
+            width: 550px;
+        }
+        &__carousel {
+            margin: 0 auto;
+            height: 370px;
+        }
+        &__photo {
+            width: 100%;
+            height: 333px;
+        }
+    }
+    .contacts {
+        min-height: 400px;
+        &__info {
+            width: 450px;
+            font-size: 11px;
+            line-height: 15px;
+        }
+        &__photo {
+            height: 250px;
+            margin-left: 65px;
+        }
+        &__text {
+            font-size: 11px;
+            line-height: 12px;
+        }
+        &__input {
+            margin-bottom: 5px;
+            height: 27px;
+            width: 150px;
+            font-size: 11px;
+            padding: 5px;
+        }
+        .input {
+            font-size: 11px;
+        }
+        &__textarea {
+            height: 100px;
+            width: 180px;
+        }
+        &__rules {
+            font-size: 9px;
+            line-height: 9px;
+        }
+        &__grid {
+            grid-template-rows: 250px 50px;
+            column-gap: 20px;
+        }
+        &__social {
+            margin: 14px 0 0 30%;
+        }
+    }
+    .checkbox {
+        height: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .header {
+        background: url(../img/Main_bg.jpg) 69% center/cover no-repeat;
+        padding-top: 30px;
+        &__wrapper {
+            top: 15%;
+        }
+        &__title {
+            font-size: 35px;
+            line-height: 38px;
+            span {
+                font-size: 40px;
+            }
+        }
+        &__menu {
+            top: auto;
+            position: fixed;
+            bottom: 0px;
+            img {
+                display: block;
+                width: 20px;
+                margin: 10px 20px;
+            }
+        }
+        &__link {
+            display: none;
+        }
+        &__subtitle {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+    .button {
+        font-size: 9px;
+        line-height: 12px;
+        width: 120px;
+        height: 35px;
+        border: 1px solid $main-color;
+    }
+    .title {
+        font-size: 17px;
+    }
+    .about {
+        padding: 20px 0;
+        &__photo {
+            width: 180px;
+            position: inherit;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__block {
+            position: inherit;
+            top: 10px;
+            width: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px;
+        }
+        &__text {
+            font-size: 11px;
+        }
+        &__grid {
+            margin-top: 10px;
+            column-gap: 8px;
+            grid-template-rows: repeat(3, 20px);
+        }
+        &__item {
+            font-size: 10px;
+        }
+    }
+    .skills {
+        padding: 20px 0;
+        &-extra {
+            flex-wrap: wrap;
+            justify-content: center;
+            &__item {
+                margin-bottom: 10px;
+            }
+            &__title {
+                padding: 10px 10px 0;
+            }
+            &__photo {
+                height: 35px;
+            }
+        }
+    }
+    .portfolio {
+        min-height: 580px;
+        padding: 40px 0;
+        &__wrapper {
+            height: 388px;
+            width: 270px;
+        }
+        &__bg {
+            display: none; 
+        }
+        &__photo {
+            width: 100%;
+            height: 388px;
+        }
+        &__link {
+            font-size: 14px;
+            width: 150px;
+            line-height: 30px;
+            height: 40px;
+        }
+        .slick-next {
+            width: 80px;
+            right: 22%;
+        }
+        .slick-prev {
+            width: 80px;
+            left: 22%;
+        }
+    }
+    .contacts{
+        &__photo {
+            display: none;
+        }
+        &__info {
+            width: 100%;
+        }
+        &__text {
+            text-align: center;
+            font-size: 15px;
+            
+        }
+        &__input {
+            width: 100%;
+            height: 30px;
+        }
+        .input {
+            border: 1px solid $main-color;
+        }
+        &__textarea {
+            width: 100%;
+            height: 100px;
+        }
+        &__social {
+            margin: 10px auto 0;
+        }
+        &__grid {
+            grid-template: 300px 50px / auto;
+        }
+        .form {
+            margin: 0 auto;
+            button {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+    }
+}

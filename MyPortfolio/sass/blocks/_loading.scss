@@ -1,0 +1,23 @@
+.loader {
+    position: fixed;
+    visibility: visible;
+    z-index: 10000;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    transition: .9s;
+    background-color: $second-color;
+    img{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translateY(-50%) translateX(50%);
+    }
+}
+
+.loader_hidden {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+
+}

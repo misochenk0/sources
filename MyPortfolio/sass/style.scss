@@ -1,0 +1,41 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import 'base/variables';
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+}
+.visible {
+    overflow: visible;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.title {
+    color: $main-color;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+    &_fz25 {
+        font-size: 25px;
+    }
+}
+
+@import 'blocks/buttons';
+@import 'blocks/header';
+@import 'blocks/about';
+@import 'blocks/skills';
+@import 'blocks/modal';
+@import 'blocks/portfolio';
+@import 'blocks/contacts';
+@import 'blocks/loading';
+@import 'blocks/media';

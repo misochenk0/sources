@@ -1,0 +1,226 @@
+.portfolio {
+    background-color: $second-color;
+    padding: 60px 0 0;
+    min-height: 750px;
+    position: relative;
+    .container {
+        padding-top: 60px;
+        position: relative;
+    }
+    .slick-next {
+        position: absolute;
+        right: 235px;
+        top: 50%;
+        width: 50px;
+        background-color: #dfe2e4;
+        border-radius: 100%;
+        border: 1px solid $main-color;
+        height: 50px;
+        transition: .6s all;
+        
+        animation-delay: 4s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        @keyframes right_btn {
+            0% {}
+            100% {right: 40px;}
+        }
+        &:before {
+            content: 'ᐳ';
+            color: $main-color;
+            font-size: 30px;
+            position: absolute;
+            line-height: 30px;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            margin-left: 2px;
+        }
+        &:hover {
+            background-color: $main-color;
+            &:before {
+                color: $second-color;
+            }
+        }
+    }
+    .slick-prev {
+        position: absolute;
+        left: 235px;
+        top: 50%;
+        width: 50px;
+        border-radius: 100%;
+        border: 1px solid $main-color;
+        background-color: #dfe2e4;
+        height: 50px;
+        transition: 1s all;
+        
+        animation-delay: 4s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        @keyframes left_btn {
+            0% {}
+            100% {left: 40px;}
+        }
+        &:before {
+            content: 'ᐸ';
+            color: $main-color;
+            font-size: 30px;
+            line-height: 30px;
+            position: absolute;
+            top: 50%;
+            margin-right: 2px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        &:hover {
+            background-color: $main-color;
+            &:before {
+                color: $second-color;
+            }
+        }
+    }
+    &__wrapper {
+        width: 678px;
+        height: 398px;
+        margin: 0 auto;
+        z-index: 2;
+        overflow: hidden;
+        position: relative;
+    }
+    &__bg {
+        position: absolute;
+        top: 126px;
+        width: 850px;
+        left: 50%;
+        transform: translateX(-50.14%);
+        background: url(../img/Macbook.png) center center/cover no-repeat;
+        height: 550px;
+    }
+    &__carousel {
+        display: flex;
+        justify-content: start;
+        width: calc(100% * 6);
+        height: 100%;
+        margin: 0 auto;
+        transition: .5s all;
+        flex-wrap: nowrap;
+        z-index: 2;
+        position: absolute;
+        
+    }
+    &__block {
+        position: relative;
+        transition: .5s all;
+        width: 100%;
+        height: 100%;
+        object-position: 0;
+        &:hover {
+            .portfolio__photo{
+                filter: blur(3px);
+            }
+            .portfolio__link {
+                visibility: visible;
+                opacity: 100%;
+            }
+        }
+    }
+    &__link {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        font-size: 30px;
+        width: 224px;
+        height: 52px;
+        border-radius: 25px;
+        font-weight: bold;
+        background-color: $second-color;
+        border: 3px solid $main-color;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        left: 50%;
+        color: $main-color;
+        visibility: hidden;
+        text-transform: uppercase;
+        transition: .5s all;
+        opacity: 0;
+        &:hover {
+            text-decoration: none;
+            color: $main-color;
+            box-shadow: 2px 4px 6px $main-color;
+        }
+    }
+    &__photo {
+        width: 100%;
+        height: 395px;
+        z-index: 1;
+        margin: 0 auto;
+        transition: .5s all;
+
+    }
+    &__cover {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 100%;
+        top: 0;
+        background-color: black;
+        z-index: 30;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        transition: .9s;
+        animation-delay: 4s;
+        @keyframes loading {
+            0% {opacity: 1;}
+            100% {opacity: 0; visibility: hidden;}
+        }
+        &_img {
+            width: 20%;
+            position: absolute;
+            top: 50%;
+            transition: .9s all;
+
+            visibility: hidden;
+            opacity: 0;
+            fill: #fff;
+            z-index: 32;
+            left: 50%;
+            filter: brightness(2);
+            animation-delay: 1s;
+            transform: translateX(-50%) translateY(-50%);
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+            @keyframes load {
+                0% {transform: translateX(-50%) translateY(-50%);
+                    ;
+                }
+                60% {transform: translateX(-50%) translateY(-50%) rotate(720deg); opacity: 1;}
+                99% {transform: translateX(-50%) translateY(-50%) scale(19);
+                    opacity: 0;}
+                100% {transform: translateX(-50%) translateY(-50%) scale(19);
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+
+            svg {
+                transition: .9s all;
+                width:100%;
+            }
+        }
+    }
+    .cover_animation {
+        animation-name: loading;
+    }
+    .img_animation {
+        visibility: visible;
+        opacity: 1;
+        animation-name: load;
+    }
+    .left_btn_animation {
+        animation-name: left_btn;
+    }
+    .right_btn_animation {
+        animation-name: right_btn;
+    }
+}

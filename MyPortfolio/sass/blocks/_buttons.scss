@@ -1,0 +1,27 @@
+.button {
+    width: 244px;
+    height: 66px;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: $main-color;
+    border: 3px solid $main-color;
+    transition: .5s all;
+    text-transform: uppercase;
+    &_transparent {
+        visibility: hidden;
+        opacity: 0;
+    }
+    &:hover {
+        background-color: $second-color;
+    }
+    &_small {
+        height: 50px;
+        width: 200px;
+        border-radius: 20px;
+        line-height: 40px;
+    }
+}

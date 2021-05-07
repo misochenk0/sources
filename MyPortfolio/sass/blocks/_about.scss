@@ -1,0 +1,40 @@
+.about {
+    min-height: 795px;
+    padding: 60px 0 0;
+    background-color: $second-color;
+    .container {
+        position: relative;
+    }
+    &__photo {
+        position: absolute;
+        width: 400px;
+        z-index: 100;
+        margin: 15px 0 0 130px;
+    }
+    &__block {
+        position: absolute;
+        width: 630px;
+        background-color: #bab4ae;
+        border-radius: 60px;
+        right: 70px;
+        height: 450px;
+        top: 140px;
+        padding: 25px 45px 0 120px ;
+        z-index: 10;
+    }
+    &__text {
+        color: $main-color;
+        font-size: 19px;
+        line-height: 25px;
+    }
+    &__grid {
+        margin-top: 15px;
+        display: grid;
+        grid-template: repeat(3, 30px) / repeat(2, 260px);
+        font-size: 16px;
+        span {
+            font-weight: bold;
+
+        }
+    }
+}
