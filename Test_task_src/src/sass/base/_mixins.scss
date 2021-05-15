@@ -1,0 +1,32 @@
+@mixin closed {
+    &:before {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        content: '/';
+        transform: rotate(109deg);
+    }
+    &:after {
+        content: '\\';
+        position: absolute;
+        top: 0px;
+        right: 20.4px;
+        transform: rotate(-109deg);
+    }
+}
+@mixin opened {
+    &:before {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        content: '/';
+        transform: rotate(20deg);
+    }
+    &:after {
+        content: '\\';
+        position: absolute;
+        top: 0.4px;
+        right: 19.4px;
+        transform: rotate(-27deg);
+    }
+}
